@@ -5,7 +5,7 @@ from pymeasure.instruments.exceptions import InstrumentError, InstrumentRuntimeE
 from pymeasure.instruments.Agilent.tunable_laser import Agilent8164AB
 import pylab
 import numpy as np
-
+#hello
 
 class AGILENT_SWEEP(object):
 
@@ -75,7 +75,7 @@ class AGILENT_SWEEP(object):
         ''' Generate output trigger every time a sweep step finishes. '''
         laser.trigger_input = 'IGNORE'
         laser.trigger_output = 'STFINISHED'
-        ''' SMEasure: Start a single measurement. If a measurement function is active, see ì:SENSe[n][:CHANnel[m]]:FUNCtion:STATeî on page 92, 
+        ''' SMEasure: Start a single measurement. If a measurement function is active, see ‚Äú:SENSe[n][:CHANnel[m]]:FUNCtion:STATe‚Äù on page 92, 
             one sample is performed and the result is stored in the data array '''
         sensor.trigger_input = 'SMEASURE'
         sensor.triger_output = 'DISABLED'
